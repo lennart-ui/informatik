@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Ptux zeigt dir klare Tipps fürs Programmieren und überraschende Funfacts über Pinguine.">
+  <title>Ptux der Pinguin — Code & kalte Fakten</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#start" aria-label="Ptux, zur Startseite">
+      <span class="wordmark-icon" aria-hidden="true">P</span>
+      <span>ptux<span class="wordmark-period">.</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="#tipps">Code-Tipps</a>
+      <a href="#fakten">Pinguin-Fakten</a>
+    </nav>
+    <a class="header-cta" href="#tipps">Los geht's <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Dein Coding-Kumpel aus der Antarktis</p>
+        <h1 id="hero-title">Moin, ich bin<br><span>Ptux.</span></h1>
+        <p class="hero-intro">Ich watschel mit dir durch den Code und tauche mit dir in die Welt der Pinguine ein. Ohne Fachchinesisch. Versprochen.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#tipps">Tipps entdecken <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="#fakten">Erst mal Fakten lesen</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Neugier ist der beste erste Schritt.</span></div>
+      </div>
+      <figure class="hero-image">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Gentoo_Penguin_Chick_On_Danco_Island.jpg/960px-Gentoo_Penguin_Chick_On_Danco_Island.jpg" alt="Ein flauschiges Eselspinguin-Küken auf einer schneebedeckten Insel" fetchpriority="high">
+        <figcaption><span>ANTARKTIS · 64°44′ S</span><a href="https://commons.wikimedia.org/wiki/File:Gentoo_Penguin_Chick_On_Danco_Island.jpg" target="_blank" rel="noreferrer">Foto: Wikimedia Commons ↗</a></figcaption>
+        <span class="image-stamp" aria-hidden="true">CODE<br> &amp; KALT</span>
+      </figure>
+      <div class="hero-index" aria-hidden="true"><span>01</span> / PTUX' POLAR-POST</div>
+    </section>
+
+    <section class="penguin-play" aria-labelledby="friends-title">
+      <div class="penguin-copy">
+        <p class="eyebrow"><span class="eyebrow-dot coral"></span> Kurz mal Hallo sagen</p>
+        <h2 id="friends-title">Ptux hat<br>Besuch<span>!</span></h2>
+        <p id="friend-response" aria-live="polite">Die zwei freuen sich über einen Klick.</p>
+        <p class="image-credits">PNG: <a href="https://github.com/jdecked/twemoji" target="_blank" rel="noreferrer">Twemoji</a> · <a href="https://commons.wikimedia.org/wiki/File:Emperor_penguin_chick_(head).svg" target="_blank" rel="noreferrer">Wikimedia Commons</a></p>
+      </div>
+      <div class="penguin-friends" aria-label="Pinguine zum Anklicken">
+        <button class="penguin-friend" type="button" data-message="Ptux watschelt schon mal los. Code wartet!" aria-label="Ptux, der Pinguin. Anklicken für eine Nachricht.">
+          <img src="https://raw.githubusercontent.com/jdecked/twemoji/main/assets/72x72/1f427.png" alt="" width="72" height="72">
+          <span>Ptux</span>
+        </button>
+        <button class="penguin-friend chick-friend" type="button" data-message="Pico sagt: Jeder große Sprung fängt mit einem kleinen Schritt an." aria-label="Pico, das Kaiserpinguin-Küken. Anklicken für eine Nachricht.">
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Emperor_penguin_chick_%28head%29.svg/500px-Emperor_penguin_chick_%28head%29.svg.png" alt="" width="120" height="74">
+          <span>Pico</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="tip-section" id="tipps" aria-labelledby="tips-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span class="eyebrow-dot coral"></span> Kleine Schritte, große Sprünge</p>
+        <h2 id="tips-title">Code-Tipps von<br><span>Ptux.</span></h2>
+      </div>
+      <div class="tip-content">
+        <div class="tip-meta"><span>PROGRAMMIEREN, ABER ENTSPANNT</span><span id="tip-count" aria-live="polite">TIPP 01 / 03</span></div>
+        <article class="tip-card" aria-live="polite" aria-atomic="true">
+          <span class="tip-number" id="tip-number">01</span>
+          <div>
+            <h3 id="tip-title">Klein anfangen ist clever.</h3>
+            <p id="tip-copy">Teile große Aufgaben in winzige Häppchen. Erst „Hallo, Welt!“, dann das nächste Stück. Jeder kleine Erfolg bringt dich weiter.</p>
+          </div>
+        </article>
+        <div class="tip-controls">
+          <span class="tip-progress" aria-hidden="true"><span id="tip-progress-fill"></span></span>
+          <button class="button button-light" id="next-tip" type="button">Nächster Tipp <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts-section" id="fakten" aria-labelledby="facts-title">
+      <div class="facts-topline"><span>WISSEN AUS DER PINGUINWELT</span><span>02 — 04</span></div>
+      <div class="facts-layout">
+        <div class="facts-heading">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Eis, aber heißes Wissen</p>
+          <h2 id="facts-title">Pinguine sind<br><span>ziemlich cool.</span></h2>
+          <p>Ein paar Dinge, die selbst viele Pinguin-Fans noch nicht wissen.</p>
+        </div>
+        <div class="fact-display" aria-live="polite" aria-atomic="true">
+          <span class="fact-label"><span class="fact-spark" aria-hidden="true">✳</span> PTUX' FAKT DES MOMENTS</span>
+          <p class="fact-text" id="fact-text">Pinguine können nicht fliegen. Dafür sind sie unter Wasser echte Raketen und schwimmen je nach Art bis zu 36 km/h.</p>
+          <span class="fact-index" id="fact-index">FAKT 01</span>
+          <button class="fact-button" id="next-fact" type="button" aria-label="Anderen Pinguin-Fakt anzeigen" title="Anderen Fakt anzeigen">↻</button>
+        </div>
+      </div>
+      <div class="fact-ribbon" aria-hidden="true"><span>NEUGIERIG BLEIBEN</span><span>·</span><span>WEITERWATSCHELN</span><span>·</span><span>NEUGIERIG BLEIBEN</span><span>·</span><span>WEITERWATSCHELN</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-mark" href="#start"><span class="wordmark-icon" aria-hidden="true">P</span><span>ptux<span class="wordmark-period">.</span></span></a>
+    <p>Mit kalten Flossen und warmem Herzen gemacht.</p>
+    <a href="#start" class="back-top">Zurück nach oben ↑</a>
+  </footer>
+</body>
+</html>
